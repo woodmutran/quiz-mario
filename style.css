@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i&display=swap');
+
+:root {
+  --bgLinear: linear-gradient(315deg, #a0acfe 100%, #7c8dff 100%);
+  --mainColor: #225ed8;
+  --secondaryColor: #1a202c;
+  --btnColor: #f9461d;
+}
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: var(--bgLinear);
+  /* height: 100vh; */
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fec17b;
+  text-align: center;
+  position: relative;
+  bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #495be0;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.bolderFont {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+}
+
+.quizBanner {
+  background-image: url(supermario-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+}
+
+.blockQuiz {
+  width: 40%;
+  color: var(--secondaryColor);
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.quizForm {
+  width: 100%;
+  padding: 3%;
+  color: #fff;
+  text-align: center;
+}
+
+.form-check {
+  margin: 0.5rem;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--btnColor);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+}
+
+.btn:hover {
+  background-color: #de5917;
+}
+
+.card:hover {
+  box-shadow: 1px 8px 7px #211fad75;
+  transform: translate3d(2px, 2px, 2px);
+  transition: all 0.2s ease-out;
+}
+
+.score {
+  margin-top: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
