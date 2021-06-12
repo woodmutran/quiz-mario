@@ -21,12 +21,10 @@ Link do repositório do curso: https://github.com/roger-melo-treinamentos/curso-
 
 Ps: se você não conseguiu fazer tudo o que foi pedido acima, abra a issue mesmo assim =)
 */
-
 const form = document.querySelector('.quizForm')
 const inputQuiz = document.querySelectorAll('input')
 const button = document.querySelector('button')
 const p = document.createElement('p')
-
 const trueAnswers = ['T', 'T', 'T', 'T']
 
 form.addEventListener('submit', event => {
