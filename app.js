@@ -24,7 +24,7 @@ Ps: se você não conseguiu fazer tudo o que foi pedido acima, abra a issue mesm
 const form = document.querySelector('.quizForm')
 const inputQuiz = document.querySelectorAll('input')
 const button = document.querySelector('button')
-const p = document.createElement('p')
+const finalScore = document.createElement('p')
 const trueAnswers = ['T', 'T', 'T', 'T']
 
 form.addEventListener('submit', event => {
@@ -48,8 +48,8 @@ form.addEventListener('submit', event => {
   });
 
   button.insertAdjacentElement('afterend', p)
-  p.classList.add('score')
-  const congratulations = () => {
+  finalScore.classList.add('score')
+  const getCongratulationsMessage = () => {
     if (score === 100) {
       return `Parabéns!`
     } else if (score === 0) {
@@ -58,5 +58,5 @@ form.addEventListener('submit', event => {
     return ``
   }
 
-  p.innerHTML = `Sua pontuação foi de <b style="color: #fec17b">${score} pontos</b>. ${congratulations()}`
+  finalScore.innerHTML = `Sua pontuação foi de <b style="color: #fec17b">${score} pontos</b>. ${getCongratulationsMessage()}`
 })
