@@ -47,7 +47,7 @@ form.addEventListener('submit', event => {
 
   });
 
-  button.insertAdjacentElement('afterend', p)
+  button.insertAdjacentElement('afterend', finalScore)
   finalScore.classList.add('score')
   const getCongratulationsMessage = () => {
     if (score === 100) {
